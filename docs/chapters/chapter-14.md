@@ -1,6 +1,6 @@
 # Chapter 14: Design for Observable Trust Signals  
 
-![Image 14 - Observe](../images/14.%20Observe.png)  
+![Image 14 - Observe](../images/14.%20Transparency.png)  
 
 ## Overview
 
@@ -34,8 +34,6 @@ Azure provides comprehensive observability out of the box:
 Observable systems aren't just easier to debug—they're easier to trust. When stakeholders can see evidence of responsible operation, confidence grows and adoption accelerates.
 
 ## Resources and Further Reading
-
-![Observable Trust Signals](../images/14.%20observable%20systems.png) 
 
 ### Online Resources
 - 🌐 [Zero Trust Best Practice Frameworks](https://learn.microsoft.com/en-us/training/modules/introduction-zero-trust-best-practice-frameworks/)

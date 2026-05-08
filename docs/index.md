@@ -1,10 +1,10 @@
 # Building Trustworthy AI
 
-![Trustworthy AI Visualization](images/index.png)
+![Trustworthy AI Visualization](images/1.%20Responsibility.png)
 
 ## Overview
 
-This comprehensive guide covers 30ish essential thoughts on building trustworthy AI systems, from foundation to defence in depth. Whether you're a beginner or an experienced practitioner, you'll find valuable insights and practical guidance.
+This comprehensive guide covers 30 essential thoughts on building trustworthy AI systems, from foundation to defence in depth. Whether you're a beginner or an experienced practitioner, you'll find valuable insights and practical guidance.
 
 
 ## What You'll Learn
@@ -37,14 +37,14 @@ Building trustworthy AI requires a multi-faceted approach that combines technica
 ## Course Structure
 
 
-The course is organized into 6 sections (32 chapters total):  
+The course is organized into 6 sections (30 chapters total):  
 
 1. **Core Concepts** – Foundations and principles of trustworthy AI (Chapters 1–10)  
 2. **Map** – Identifying Harms (Chapter 11)  
 3. **Measure** – Evaluation, signals, and safety (Chapters 12–21)  
 4. **Mitigate** – Defenses and incident response (Chapters 22–25)  
 5. **Operate** – Testing, monitoring, and continuous improvement (Chapters 26–29)  
-6. **Conclusion & Resources** – Final thoughts, governance, and further learning (Chapters 30–32)  
+6. **Conclusion & Resources** – Final thoughts, governance, and further learning (Chapter 30)  
 
 
 ## Key Resources

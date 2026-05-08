@@ -1,6 +1,6 @@
 # Chapter 11: Identifying Harms 
 
-![Image 11 - Harms](../images/11.%20Harms.png)  
+![Image 11 - Harms](../images/11.%20Risks.png)  
 
 ## Overview
 

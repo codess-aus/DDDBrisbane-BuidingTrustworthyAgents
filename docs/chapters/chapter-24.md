@@ -1,6 +1,6 @@
 # Chapter 24: Azure AI Content Safety  
 
-![Image 24 - Content Safety](../images/24.%20Content%20Safety.png)
+![Image 24 - Content Safety](../images/24.%20Scan.gif)
 
 ## Overview  
 

@@ -1,7 +1,7 @@
 # Chapter 15: Continuous Evaluation & Monitoring
 
-![Continuous evaluation & automated red teaming animation](../images/20.%20auto%20red-teaming.gif){ .gif-figure }
-<div class="gif-caption">Figure: Continuous Evaluation & Monitoring in action (animated)</div>
+![Image 15 - Observability](../images/15.%20Observability.png)
+<div class="gif-caption">Figure: Continuous Evaluation and Monitoring</div>
 
 ## Overview
 

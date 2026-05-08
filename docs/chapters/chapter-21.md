@@ -1,6 +1,6 @@
 # Chapter 21: Establish On-going Verification Loops
 
-![Image 21 - Verification Loops](../images/21.%20Verification%20Loops.png)  
+![Image 21 - Verification Loops](../images/21.%20Manual.png)  
 
 ## Overview
 

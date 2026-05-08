@@ -1,6 +1,6 @@
 # Chapter 29: Feedback Channels  
 
-![Image 29 - Feedback Channels](../images/29.%20Feedback%20Channels.png)  
+![Image 29 - Feedback Channels](../images/29.%20Feedback.png)  
 
 ## Overview  
 

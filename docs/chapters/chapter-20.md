@@ -1,7 +1,7 @@
 # Chapter 20: Automated Red Team Scanning
 
-![Automated Red Teaming workflow (animated)](../images/20.%20auto%20red-teaming.gif){ .gif-figure }
-<div class="gif-caption">Figure: Automated Red Teaming workflow (animated)</div>  
+![Image 20 - Evaluation](../images/20.%20Eval.png)
+<div class="gif-caption">Figure: Automated Red Teaming workflow</div>  
 
 ## Overview
 

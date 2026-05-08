@@ -1,6 +1,6 @@
 # Chapter 22: Mitigation Tools  
 
-![Image 22 - Mitigation Tools](../images/22.%20Mitigation%20Tools.png)  
+![Image 22 - Mitigation Tools](../images/22.%20Auto.png)  
 
 ## Overview
 

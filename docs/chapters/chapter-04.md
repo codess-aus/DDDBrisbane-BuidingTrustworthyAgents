@@ -1,6 +1,6 @@
 # Chapter 4: Microsoft Trustworthy AI  
 
-![Image 4 - Trustworthy](../images/4.%20Trustworthy.png)  
+![Image 4 - Trustworthy](../images/4.%20Defence.png)  
 
 ## Overview
 

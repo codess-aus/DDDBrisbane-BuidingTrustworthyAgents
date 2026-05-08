@@ -1,6 +1,6 @@
 # Chapter 12: Manual and automated evaluations.
 
-![Image 12 - Measure](../images/12.%20Measure.png)  
+![Image 12 - Measure](../images/12.%20Safety.png)  
 
 ## Overview
 

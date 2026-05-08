@@ -12,16 +12,16 @@ theme:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: deep purple
-      accent: teal
+      primary: black
+      accent: cyan
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: deep purple
-      accent: teal
+      primary: black
+      accent: cyan
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -100,8 +100,6 @@ nav:
     - 'Chapter 29: Feedback Channels': chapters/chapter-29.md
   - Conclusion & Resources:
     - 'Chapter 30: The Path Forward': chapters/chapter-30.md
-    - 'Chapter 31: Resources': chapters/chapter-31.md
-    - 'Chapter 32: Connect with Me!': chapters/chapter-32.md
 
 plugins:
   - search

@@ -1,39 +1,46 @@
-# Chapter 9: A Practical Guide to Operationalizing Trust in Agents  
+# Chapter 9: Retrieval-Augmented Generation (RAG) in Practice
 
-![Image 9 - Practical](../images/9.%20Practical.png)
+![Image 9 - RAG](../images/9.%20RAG.png)
 
 ## Overview
 
-How does an enterprise move from aspiration to operational trust in agents? Here's a practical blueprint:
+RAG combines the power of large language models with external knowledge sources. Instead of relying only on model training knowledge, the system retrieves relevant documents at runtime and uses them to ground its answer.
 
-### Practical Steps to Operationalize Trust
+### Why RAG Matters
 
-Moving from principles to practice requires concrete actions and tooling:
+RAG is one of the most practical patterns for trustworthy agent systems because it:
 
-- **Start with Use Case Definition**: Clearly scope what the agent will and won't do
-- **Implement Evaluation Early**: Use Azure AI Foundry's evaluation SDK from day one
-- **Build in Layers**: Model → Safety System → Application Logic → User Experience
-- **Monitor Continuously**: Instrument with Azure Monitor for real-time trust signals
-- **Iterate Based on Feedback**: Establish feedback loops with users and stakeholders
+- **Reduces Hallucinations** by grounding answers in retrieved evidence
+- **Keeps Information Current** by using up-to-date data sources rather than static model memory
+- **Enables Domain-Specific Knowledge** by connecting to enterprise repositories, policies, and operational documentation
 
-### Tools for Trustworthy Agents
+### Core RAG Flow
 
-Azure AI Foundry and GitHub provide end-to-end support for building trustworthy agents:
+Most RAG systems follow a repeatable flow:
 
-- **Development**: GitHub Copilot suggests secure, responsible code patterns
-- **Evaluation**: Azure AI Evaluation SDK measures quality and safety metrics
-- **Deployment**: Azure AI Foundry provides managed endpoints with built-in safety
-- **Monitoring**: Application Insights tracks performance and user satisfaction
-- **Governance**: Azure Policy enforces compliance and audit requirements
+1. Receive the user query
+2. Retrieve relevant chunks from approved knowledge sources
+3. Inject context into the prompt
+4. Generate a grounded response
+5. Optionally include citations so users can verify the answer
 
-This isn't theory—it's the operational framework Microsoft uses internally and makes available through Azure AI Foundry. You can build agents that earn trust through design, measurement, and continuous improvement.
+### Design Considerations for Trustworthy RAG
+
+To improve reliability and trust, define these decisions explicitly:
+
+- Which sources are allowed as system-of-record knowledge
+- Whether internet retrieval is enabled or blocked
+- When the model should abstain instead of guessing
+- How references are surfaced to users
+
+RAG is not just a performance technique; it is a governance and trust technique.
 
 ## Resources and Further Reading
 
 ### Online Resources
-- 🌐 [Building Trustworthy Agents](https://github.com/microsoft/ai-agents-for-beginners/blob/main/06-building-trustworthy-agents/README.md)  
-- 🌐 [Develop AI Agents](https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-on-azure/)  
-- 🌐 [Cloud Adoption Framework](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/strategy)  
+- 🌐 [Retrieval Augmented Generation pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-pattern)
+- 🌐 [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
+- 🌐 [Build a RAG solution](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)
 
 
 ## Next Steps

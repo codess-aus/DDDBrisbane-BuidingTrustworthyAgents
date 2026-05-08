@@ -1,6 +1,6 @@
 # Chapter 13: Measurement Challenges
 
-![Image 13 - Challenge](../images/13.%20Challenge.png)  
+![Image 13 - Challenge](../images/13.%20Prompt.png)  
 
 ## Overview
 

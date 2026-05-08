@@ -1,6 +1,6 @@
 # Chapter 25: Responsible AI practices in prompt engineering  
 
-![Image 25 - Prompt Engineering](../images/25.%20Prompt%20Engineering.png)  
+![Image 25 - Prompt Engineering](../images/25.%20Metrics.png)  
 
 ## Overview  
 

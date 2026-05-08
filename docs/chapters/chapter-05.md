@@ -1,36 +1,62 @@
-# Chapter 5: Transparency as a Feature, Not a Checkmark  
+# Chapter 5: Multi-Agent Systems and Security Boundaries
 
-
-![Image 5 - Transparency](../images/5.%20Transparency.png)
+![Image 5 - Multi-Agent Systems](../images/5.%20MultiAgent.png)
 
 ## Overview
 
-Transparency is a discipline, not an accessory. In an enterprise, an agent's decisions can carry millions in revenue implications or regulatory risk. "Black box" behaviour is not acceptable.
+Multi-Agent Systems are powerful for real-world enterprise workloads because they coordinate multiple specialized agents to solve complex tasks.
 
-What does this look like in practice?
+### Why Multi-Agent Systems Work
 
-**Explainability by Default**: Agents must offer human-understandable rationales for their actions, traceable down to the data and logic used. This can mean surfacing the factors behind a pricing decision, the steps taken to escalate a customer issue, or the evidence used to reject a transaction.
+When designed well, multi-agent systems provide clear benefits:
 
-**Auditability**: Every action an agent takes must be logged, timestamped, and attributed to a versioned codebase and model state. This is not just a compliance checkbox, it's the foundation for debugging, learning, and continuous improvement.
+- **Specialization and Expertise**: Each agent focuses on one responsibility and can be tuned for that task.
+- **Parallel Processing**: Independent agents can run concurrently for better performance.
+- **Modular and Maintainable Design**: You can update, test, and replace one agent without rewriting the whole application.
 
-**Visibility Layers**: Build dashboards where business users and IT alike can see "why" as well as "what." Imagine the equivalent of a flight data recorder, but for decisions.
+### Separation of Duties by Design
 
-### Building Transparent AI with Azure and GitHub
+Security experts often support this pattern because it naturally enables separation of duties:
 
-Azure AI Foundry and GitHub provide the infrastructure for transparency at scale:
+- Each agent has a bounded role.
+- Each role gets only the permissions required for that role.
+- Each agent action can be constrained by explicit security boundaries.
 
-- **Distributed Tracing**: Track every request end-to-end with Azure Monitor and Application Insights
-- **Model Lineage**: Version control models alongside code using GitHub and Azure ML
-- **Evaluation Metrics**: Surface groundedness, relevance, and coherence scores in Azure AI Foundry
-- **Comprehensive Logging**: Audit trails for every decision, accessible for compliance and debugging
+This architecture supports trustworthy AI development from day one, especially when paired with continuous monitoring, evaluation, testing, and iterative improvement.
 
-Transparency isn't just about explaining decisions after the fact—it's about designing systems where every action is traceable from input to output. With Azure's observability tools and GitHub's version control, you build AI systems where trust is visible and verifiable.
+### Principle of Least Privilege (POLP)
+
+The Principle of Least Privilege is a core security practice: every user, process, or system should get the minimum access needed to perform its task.
+
+Why this matters:
+
+- **Reduces Risk**: Limits the blast radius of accidents or malicious actions.
+- **Minimizes Attack Surface**: Fewer permissions means fewer pathways for abuse.
+- **Supports Audit and Compliance**: Easier to verify what access is necessary and what is not.
+
+Example:
+
+If an Azure AI agent only needs to read from a database, grant read access only. Do not grant write or admin rights.
+
+### The Orchestrator and System Risk
+
+The orchestrator can become the strongest control point or the biggest weakness. In practice, risk can emerge from the orchestrator, a single agent, or interaction effects across the whole system.
+
+That is why trustworthy apps must include:
+
+- Ongoing monitoring and observability
+- Regular evaluation and red teaming
+- Continuous improvement loops
+- Human-in-the-loop controls for high-impact decisions
+
+POLP has been a foundation of security architecture since the 1970s, and it remains essential for agentic systems today.
 
 ## Resources and Further Reading
 
 ### Online Resources
-- 🌐 [Responsible AI Transparency Reports](https://www.microsoft.com/en-us/corporate-responsibility/responsible-ai-transparency-report/)  
-- 🌐 [Apply Responsible AI Principles](https://learn.microsoft.com/en-us/training/modules/apply-responsible-ai-principles/)  
+- 🌐 [Principle of Least Privilege](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access)
+- 🌐 [Develop AI Agents on Azure](https://learn.microsoft.com/en-us/training/paths/develop-ai-agents-on-azure/)
+- 🌐 [Microsoft AI Red Team](https://learn.microsoft.com/en-us/security/ai-red-team/)
 
 
 ## Next Steps

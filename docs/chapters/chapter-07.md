@@ -1,6 +1,6 @@
 # Chapter 7: Reliability under Uncertainty  
 
-![Image 7 - Reliability](../images/7.%20Reliability.png)  
+![Image 7 - Reliability](../images/7.%20Reasoning.png)  
 
 ## Overview
 

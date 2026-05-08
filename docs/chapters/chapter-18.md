@@ -1,6 +1,6 @@
 # Chapter 18: Automated evaluation metrics in Azure AI Foundry  
 
-![Image 18 - Auto Eval](../images/18.%20Auto%20Eval.png)  
+![Image 18 - Auto Eval](../images/18.%20Core.png)  
 
 ## Overview
 

@@ -1,6 +1,6 @@
 # Chapter 28: Implement Guardrails and Escalation Paths  
 
-![Image 28 - Guardrails and Escalation Paths](../images/28.%20Guardrails%20and%20Escalation%20Paths.png)  
+![Image 28 - Guardrails and Escalation Paths](../images/28.%20Guard.png)  
 
 
 

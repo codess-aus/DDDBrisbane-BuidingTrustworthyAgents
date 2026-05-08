@@ -1,6 +1,6 @@
 # Chapter 27: Prepare for Production  
 
-![Image 27 - Prepare for prod](../images/27.%20Prepare%20for%20prod.png)  
+![Image 27 - Prepare for prod](../images/27.%20Prepare.png)  
 
 ## Overview  
 

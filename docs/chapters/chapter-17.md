@@ -1,37 +1,50 @@
-# Chapter 17: Automated evaluation for models and apps  
+# Chapter 17: Policy Boundaries for Enterprise Agents
 
-![Image 17 - Automated](../images/17.%20Automated.png)  
-
+![Image 17 - Uncertainty](../images/17.%20Uncertainty.png)
 
 ## Overview
 
-Automated evaluation is useful for measuring quality and safety on a bigger scale. Azure AI Foundry evaluation tools also enable ongoing evaluations that periodically run to monitor for regression as the system, usage, and mitigations evolve over time.
+Enterprises operate under constraints: regulatory, legal, and reputational. Trustworthy agents must embody those boundaries in day-to-day operation, not just in documentation.
 
-### Scaling Evaluation with Automation
+### Policy Codification
 
-Once you understand your quality requirements through manual evaluation, automation provides scale:
+Company policies and ethical rules should be encoded as first-class constraints in the reasoning and execution pipeline.
 
-- **Batch Processing**: Evaluate thousands of outputs quickly
-- **Continuous Monitoring**: Run evaluations on production traffic automatically
-- **Regression Detection**: Alert when quality metrics degrade over time
-- **CI/CD Integration**: Gate deployments on evaluation thresholds with GitHub Actions
-- **Cost Efficiency**: Automated evaluation is far cheaper than human annotation at scale
+Examples:
 
-### Azure AI Foundry Automated Evaluation
+- Never approve spend above 10,000 without two signatures
+- Never share PII outside the EU
 
-Azure provides comprehensive automated evaluation capabilities:
+When policy is codified, behavior becomes testable, auditable, and enforceable.
 
-- **Cloud Evaluations**: Run large-scale evaluations in Azure AI Foundry
-- **Scheduled Jobs**: Periodic evaluations to catch regression
-- **GitHub Actions Integration**: Automate evaluation in your development workflow
-- **Custom Metrics**: Define domain-specific evaluators alongside built-in metrics
+### Dynamic Policy Updates
 
-Automation doesn't replace human judgment—it amplifies it. Use manual evaluation to build intuition, then scale with Azure's automated evaluation tools.
+Regulations change. Internal standards evolve. Agent systems must adapt without wholesale retraining.
+
+This requires modular architecture where:
+
+- Policy layers are abstracted from underlying ML models
+- Rule updates can be deployed quickly
+- Compliance changes are traceable and versioned
+
+### Human Override and Control Recovery
+
+At all times, there must be a path for human intervention and override.
+
+Trust is built not only on autonomy, but on the assurance that control can be regained when risk, ambiguity, or consequence is high.
+
+Operational safeguards include:
+
+- **Escalation Triggers** for sensitive actions
+- **Approval Gates** for high-impact decisions
+- **Intervention Interfaces** for rapid suspension or rollback
 
 ## Resources and Further Reading
 
 ### Online Resources
-- 🌐 [Cloud Evaluations](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/cloud-evaluation)  
+- 🌐 [Responsible AI governance in Azure](https://learn.microsoft.com/en-us/azure/cloud-adoption-framework/scenarios/ai/govern)
+- 🌐 [Data privacy and security for Azure AI](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-ai/data-privacy)
+- 🌐 [Azure Policy documentation](https://learn.microsoft.com/en-us/azure/governance/policy/overview)
 
 ## Next Steps
 

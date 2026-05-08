@@ -1,38 +1,56 @@
-# Chapter 8: Security as Core Design, Not Perimeter Defence  
+# Chapter 8: Knowledge Bases and Grounded Responses
 
-![Image 8 - Security](../images/8.%20Security.png)  
-
+![Image 8 - Knowledge Base](../images/8.%20KB.png)
 
 ## Overview
 
-Agents will interact with sensitive data, make financial transactions, and initiate workflows. The attack surface increases exponentially as agency increases.
+The knowledge base stores information your agent can access to provide accurate and relevant responses. Designing this layer is one of the most important decisions in trustworthy agent architecture.
 
-### Security-First Agent Design
+### Knowledge Base Building Blocks
 
-Modern AI security goes beyond perimeter defenses—it requires security embedded at every layer:
+Most production systems combine multiple storage patterns:
 
-- **Principle of Least Privilege**: Limit the scope of what an agent can do. Start with minimal permissions, expand as proven trustworthy.
-- **Identity & Access Management**: Every agent must have an immutable identity and verifiable credentials. Actions must be signed and attributable.
-- **Real-time Threat Detection**: Agents should be able to detect and respond to anomalous behavior, their own and others'. Self-awareness of compromise is as vital as external defenses.
+- **Vector Databases** for semantic search across meaning, not just keywords
+- **Document Stores** for structured and semi-structured operational information
+- **Graph Databases** for relationship mapping between entities, events, and concepts
+- **Cache Layers** for performance optimization and faster response times
 
-### Azure Security for AI Systems
+### Source of Truth Decisions
 
-Azure AI Foundry and Microsoft's Secure Future Initiative provide comprehensive security:
+Before deployment, define clear boundaries for where your agent is allowed to get information:
 
-- **Managed Identity**: Use Azure AD to authenticate agents without credentials in code
-- **Content Safety**: Built-in protection against prompt injection and jailbreak attempts
-- **Network Isolation**: Deploy models in VNets with private endpoints for data residency
-- **Threat Intelligence**: Integrate Azure Sentinel for real-time anomaly detection
-- **Secret Management**: Store API keys and credentials in Azure Key Vault
+- Should it only use approved company data sources as the source of truth?
+- Must it cite references from those approved sources?
+- Can it access the public internet?
+- Can it rely on model training knowledge when no retrieved evidence exists?
 
-With GitHub Advanced Security scanning your code and Azure securing your infrastructure, you build AI systems where security is core design, not perimeter defense.
+These decisions directly shape risk, compliance, reliability, and user trust.
+
+### Creativity vs Grounded Facts
+
+Another key design choice is whether the agent should:
+
+- Stay strictly grounded in retrieved evidence (cold, hard facts)
+- Make reasonable assumptions and creative inferences when evidence is incomplete
+
+Greater creativity can improve user experience and ideation, but it can also increase hallucination risk. Trustworthy systems set this behavior intentionally rather than by accident.
+
+### Controls You Can Tune
+
+These behaviors are controllable in your architecture and prompts:
+
+- **System Prompts**: Define hard rules for retrieval, citation, and refusal behavior
+- **Temperature**: Lower values for determinism and factual consistency, higher for creativity
+- **Top-p**: Adjust token sampling diversity to control response variability
+
+Strong agent design combines retrieval policy, prompt policy, and model settings so responses are both useful and appropriately grounded.
 
 ## Resources and Further Reading
 
 ### Online Resources
-- 🌐 [Principle of Least Privilege](https://learn.microsoft.com/en-us/entra/identity-platform/secure-least-privileged-access)  
-- 🌐 [Identity & Access Management](https://learn.microsoft.com/en-us/credentials/certifications/identity-and-access-administrator)  
-- 🌐 [Real time threat detection](https://learn.microsoft.com/en-us/defender-office-365/threat-explorer-real-time-detections-about)  
+- 🌐 [Retrieval Augmented Generation pattern](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-pattern)
+- 🌐 [Azure AI Search](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
+- 🌐 [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/prompt-engineering)
 
 
 ## Next Steps

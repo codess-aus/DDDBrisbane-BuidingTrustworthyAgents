@@ -1,44 +1,71 @@
-# Chapter 26: AI Operating with Wisdom
+# Chapter 26: Layered Safety with Azure AI Content Safety
 
-![Image 26 - Operate phase](../images/26.%20Operate%20phase.png)  
+![Image 26 - Content Safety](../images/26.%20Content.png)
 
 ## Overview
 
-Phased rollouts, incident response, and telemetry.
+Choosing a strong base model is only the first step. For most real-world applications, it is not enough to rely only on built-in model safeguards.
 
-Operating AI systems in production requires more than just deployment—it demands wisdom, vigilance, and a systematic approach to managing risk. This chapter explores how to operate trustworthy AI systems through strategic rollout strategies, effective incident management, and comprehensive observability.
+Even with fine-tuning, LLMs can still make mistakes and remain susceptible to attacks such as jailbreak attempts.
 
-### Phased Rollouts
+That is why Microsoft uses a defense-in-depth approach for AI systems, similar to modern cybersecurity architecture. An AI safety layer sits around the model and monitors both inputs and outputs to reduce successful attacks and catch unsafe or low-quality responses.
 
-A phased rollout strategy minimizes risk by gradually exposing your AI system to users and real-world conditions:
+At Microsoft, this state-of-the-art safety layer is Azure AI Content Safety. The same technology used in Microsoft Copilot is available to developers through Azure AI.
 
-- **Canary Deployments**: Start with a small percentage of traffic (1-5%) to detect issues early
-- **Blue-Green Deployments**: Maintain parallel environments for instant rollback capability
-- **Feature Flags**: Control feature availability dynamically without redeployment
-- **Progressive Exposure**: Gradually increase traffic as confidence grows (5% → 25% → 50% → 100%)
-- **Monitoring Gates**: Set automatic rollback triggers based on error rates, latency, or quality metrics
+### Configurable Safety Controls by Use Case
 
-### Incident Response
+Safety controls are configurable for both input and output because acceptable risk varies by scenario.
 
-When issues arise, a well-prepared incident response plan ensures rapid, coordinated action:
+Example:
 
-- **Detection**: Automated alerts for anomalies, errors, or quality degradation
-- **Classification**: Severity levels (P0-P4) with clear escalation paths
-- **Communication**: Stakeholder notifications and status updates
-- **Mitigation**: Immediate actions (rollback, traffic shifting, feature disabling)
-- **Post-Mortems**: Blameless retrospectives to learn and improve
+A gaming company may allow more violent language in user inputs but still block violent language in model outputs.
 
-### Telemetry and Observability
+This flexibility enables teams to meet business needs while staying within policy and safety boundaries.
 
-Comprehensive telemetry provides the visibility needed to operate AI systems confidently:
+### Three Core Filter Categories
 
-- **System Metrics**: Latency, throughput, error rates, resource utilization
-- **Quality Metrics**: Model accuracy, fairness measures, output quality scores
-- **User Feedback**: Explicit ratings, implicit signals (engagement, corrections)
-- **Business Metrics**: Conversion rates, user satisfaction, ROI
-- **Distributed Tracing**: End-to-end request tracking across services
+Azure AI Content Safety provides three core filter categories:
 
-Operating with wisdom means combining technical excellence with organizational maturity—having the tools, processes, and culture to deploy confidently, respond rapidly, and learn continuously.
+1. **Configurable Content Filters**
+Detect harmful text and imagery such as hate or violence, with adjustable severity thresholds. Default thresholds are set to medium.
+
+2. **Prompt Shields**
+Detection models for model inputs that identify prompt attacks and manipulation attempts, including document attacks.
+
+3. **Risk Detection Models**
+Models that flag additional risky outputs, including protected material, protected code, and hallucinations where output is not aligned with source material.
+
+Teams can also create custom content filters using small training datasets and define custom blocklists for domain-specific terms.
+
+### Moderation and Quality Features
+
+Azure AI Content Safety supports real-time monitoring and moderation for applications and services:
+
+- **Text Moderation**: Detect and filter hate, violence, and other unsafe language
+- **Image Moderation**: Analyze images for unsafe or offensive content
+- **Multimodal Analysis**: Apply safety controls across different content types
+- **Groundedness Detection**: Flag responses that are not supported by provided source material
+- **Protected Material Detection**: Detect outputs that may violate copyright against third-party content indexes
+
+These capabilities help ensure user-generated and AI-generated content aligns with organizational guidelines.
+
+### Severity Levels and Tuning
+
+Each harm category includes a severity level that indicates the seriousness of showing flagged content.
+
+- Severity scale ranges from 0 to 7
+- Text models support both full scale (0-7) and trimmed scale (0, 2, 4, 6)
+- Current image models support the trimmed scale
+
+This severity framework allows safety policies to be tuned precisely to context, risk appetite, and compliance requirements.
+
+## Resources and Further Reading
+
+### Online Resources
+- 🌐 [What is Azure AI Content Safety?](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/overview)
+- 🌐 [Content Safety concepts and categories](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/harm-categories)
+- 🌐 [Prompt Shields documentation](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)
+- 🌐 [Groundedness detection](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/groundedness)
 
 ## Next Steps
 

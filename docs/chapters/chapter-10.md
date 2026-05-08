@@ -1,6 +1,6 @@
 # Chapter 10: Responsible AI Lifecycle  
 
-![Image 10 - Map](../images/10.%20Map.png)  
+![Image 10 - Map](../images/10.%20Action.png)  
 
 ## Overview
 

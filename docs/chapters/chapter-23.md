@@ -1,6 +1,6 @@
 # Chapter 23: Risk Mitigation Layers
 
-![Image 23 - Defence in depth](../images/23.%20Defence%20in%20depth.png)
+![Image 23 - Defence in depth](../images/23.%20Red.png)
 
 ## Overview
 

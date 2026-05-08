@@ -1,6 +1,6 @@
 # Chapter 6: Ethical and Policy Alignment  
 
-![Image 6 - Ethics](../images/6.%20Ethics.png)  
+![Image 6 - Ethics](../images/6.%20Agents.png)  
 
 ## Overview
 

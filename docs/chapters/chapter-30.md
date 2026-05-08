@@ -1,5 +1,5 @@
 # Chapter 30: The Path Forward
-![Image 30 - The Path Forward](../images/30.%20The%20Path%20Forward.png)  
+![Image 30 - The Path Forward](../images/30.%20Potential.png)  
 
 ## Overview
 
@@ -14,7 +14,7 @@ Closing Thought: Trust in agents is not an end state. It’s a journey, measured
 
 Continue your learning journey:
 
-[← Chapter 29](chapter-29.md) | [Chapter 31 →](chapter-31.md)
+[← Chapter 29](chapter-29.md)
 
 ---
 

@@ -1,44 +1,52 @@
-# Chapter 16: Manual evaluation for models and apps
+# Chapter 16: Robust Agents Under Uncertainty
 
-
-![Image 16 - Manual](../images/16.%20Manual.png)  
+![Image 16 - Ethical](../images/16.%20Ethical.png)
 
 ## Overview
 
-We recommend that you always start with manual evaluation, with human graders manually scoring generated outputs.
+Agents will face incomplete information, contradictory signals, and shifting objectives: conditions where humans themselves struggle.
 
-When mitigating specific risks, it's really helpful to keep manually checking progress against a small dataset until evidence of the risk is no longer observed before moving on to automated evaluation.
+Trustworthy systems are not built on the assumption that conditions are always clean and predictable. They are built to stay safe and useful when reality is messy.
 
-Azure AI Foundry provides an easy no-code interface for developers or domain experts to grade model outputs.
+### Failover Strategies
 
-### The Value of Manual Evaluation
+For critical processes, agents should degrade gracefully or escalate to a human-in-the-loop rather than make brittle or catastrophic decisions.
 
-Human judgment remains critical for nuanced quality assessment:
+Design patterns include:
 
-- **Build Intuition**: Understand failure modes before automating
-- **Catch Edge Cases**: Identify issues automated metrics might miss
-- **Domain Expertise**: Leverage subject matter expert knowledge
-- **Iterative Refinement**: Quickly test mitigations on small datasets
-- **Benchmark Creation**: Generate ground truth for automated metrics
+- **Safe Fallback Modes**: Switch to limited capability when confidence is low
+- **Human Escalation Paths**: Route high-impact or ambiguous decisions to people
+- **Stop Conditions**: Refuse to act when required evidence is missing
 
-### Azure AI Foundry Manual Evaluation
+### Robustness Testing
 
-Azure provides user-friendly tools for manual evaluation:
+Agents should be tested with the same rigor as disaster recovery drills.
 
-- **No-Code Interface**: Developers and domain experts can grade outputs without coding
-- **Annotation Workflows**: Structured evaluation with custom criteria
-- **Team Collaboration**: Multiple graders can assess the same outputs
-- **Export and Analysis**: Results integrate with automated evaluation pipelines
+Test beyond happy paths:
 
-Start manual, scale automated. Manual evaluation builds the understanding you need to design effective automated evaluation strategies.
+- **Edge Cases**: Rare but plausible operational scenarios
+- **Adversarial Inputs**: Prompts designed to break policy or behavior
+- **Unknown Unknowns**: Stress tests that expose hidden failure modes
+
+### Continuous Learning Loops
+
+Real-world feedback must be a core design principle, not an optional add-on.
+
+Agents should learn from:
+
+- **Past Errors**
+- **User Corrections**
+- **Operational Incidents**
+
+This creates a closed-loop system that improves over time instead of relying only on periodic retraining over static datasets.
 
 ## Resources and Further Reading
 
 ### Online Resources
-- 🌐 [Evaluate GenAI Applications](https://learn.microsoft.com/en-us/training/paths/evaluate-generative-ai-apps/)
-- 🌐 [Evaluations in GitHub Actions](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/evaluation-github-action)  
-- 🌐 [Evaluate generative AI models and applications by using Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/evaluate-generative-ai-app)  
-## Next Steps  
+- 🌐 [Architect resilient systems in Azure](https://learn.microsoft.com/en-us/azure/well-architected/reliability/)
+- 🌐 [Build and evaluate AI apps in Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/)
+- 🌐 [Prompt Shields and safety controls](https://learn.microsoft.com/en-us/azure/ai-services/content-safety/concepts/jailbreak-detection)
+## Next Steps
 
 Continue your learning journey:
 
