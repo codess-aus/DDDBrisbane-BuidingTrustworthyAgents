@@ -65,9 +65,9 @@ This course is designed for:
 No prior AI experience is required for the introductory chapters, though programming knowledge is helpful.
 
 
-## About ØREDEV 2025
+## About DDDBrisbane 2025
 
-ØREDEV is a premier conference bringing together developers, architects, and tech enthusiasts to explore the latest in software development, AI, and technology innovation.
+DDDBrisbane is a premier conference bringing together developers, architects, and tech enthusiasts to explore the latest in software development, AI, and technology innovation.
 
 ---
 

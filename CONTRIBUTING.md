@@ -12,8 +12,8 @@ Thank you for your interest in contributing to this learning resource!
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/codess-aus/OREDEV-Building-Trustworthy-AI.git
-cd OREDEV-Building-Trustworthy-AI
+git clone https://github.com/codess-aus/DDDBrisbane-BuidingTrustworthyAgents.git
+cd DDDBrisbane-BuidingTrustworthyAgents
 ```
 
 2. Install dependencies:

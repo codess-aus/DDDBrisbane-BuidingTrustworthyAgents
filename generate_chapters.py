@@ -308,7 +308,7 @@ Continue your learning journey:
 
 <div class="card">
 
-**Questions or feedback?** Join the discussion on our [GitHub repository](https://github.com/codess-aus/OREDEV-Building-Trustworthy-AI) or connect with the community.
+**Questions or feedback?** Join the discussion on our [GitHub repository](https://github.com/codess-aus/DDDBrisbane-BuidingTrustworthyAgents) or connect with the community.
 
 </div>
 """
