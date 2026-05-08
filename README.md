@@ -1,10 +1,10 @@
-# OREDEV-Building-Trustworthy-AI
+# DDDBrisbane-Building-Trustworthy-AI
 
-Code is Life: Building a Trustworthy Generative AI Solution at ØREDEV 2025
+Code is Life: Building a Trustworthy Generative AI Solution at DDDBrisbane 2025
 
 ## 🌟 Overview
 
-This is a comprehensive learning resource covering 50 chapters on building trustworthy and ethical AI systems. The site is built with MkDocs and Material theme, featuring a modern, responsive, and accessible design.
+This is a comprehensive learning resource on building trustworthy and ethical AI systems. The site is built with MkDocs and Material theme, featuring a modern, responsive, and accessible design.
 
 ## 🚀 Quick Start
 
@@ -64,7 +64,7 @@ The course includes 50 chapters organized into 10 sections:
 ## 🌐 Live Site
 
 The site is automatically deployed to GitHub Pages at:
-https://codess-aus.github.io/OREDEV-Building-Trustworthy-AI/
+
 
 ## 📝 License
 
@@ -72,4 +72,4 @@ See [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
-This is a learning resource for ØREDEV 2025. For questions or feedback, please open an issue on GitHub.
+This is a learning resource for DDDBrisbane 2025. For questions or feedback, please open an issue on GitHub.
