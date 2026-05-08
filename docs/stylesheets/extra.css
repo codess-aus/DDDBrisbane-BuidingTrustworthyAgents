@@ -1,0 +1,169 @@
+/* Custom color scheme - Purple to Blue to Green gradient */
+:root {
+  --md-primary-fg-color: #6a1b9a; /* Deep Purple */
+  --md-primary-fg-color--light: #8e24aa;
+  --md-primary-fg-color--dark: #4a148c;
+  --md-accent-fg-color: #00897b; /* Teal */
+  --md-accent-fg-color--transparent: rgba(0, 137, 123, 0.1);
+  
+  /* Custom gradient colors */
+  --gradient-purple: #6a1b9a;
+  --gradient-blue: #1976d2;
+  --gradient-teal: #00897b;
+  --gradient-green: #43a047;
+}
+
+/* Light mode custom styling */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #6a1b9a;
+  --md-accent-fg-color: #00897b;
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: #000000;
+}
+
+/* Dark mode custom styling on black background */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #8e24aa;
+  --md-accent-fg-color: #26a69a;
+  --md-default-bg-color: #000000;
+  --md-default-fg-color: #ffffff;
+  --md-code-bg-color: #1a1a1a;
+  --md-code-fg-color: #e0e0e0;
+}
+
+/* Header gradient background */
+.md-header {
+  background: linear-gradient(90deg, var(--gradient-purple) 0%, var(--gradient-blue) 50%, var(--gradient-teal) 100%);
+}
+
+/* Hero section styling */
+.md-typeset .hero {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  background: linear-gradient(135deg, var(--gradient-purple) 0%, var(--gradient-blue) 50%, var(--gradient-green) 100%);
+  color: white;
+}
+
+[data-md-color-scheme="default"] .md-typeset .hero {
+  box-shadow: 0 4px 6px rgba(106, 27, 154, 0.2);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .hero {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Card styling for content boxes */
+.md-typeset .card {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  border-left: 4px solid var(--md-accent-fg-color);
+}
+
+[data-md-color-scheme="default"] .md-typeset .card {
+  background-color: #f5f5f5;
+  border-left-color: var(--gradient-teal);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .card {
+  background-color: #1a1a1a;
+  border-left-color: var(--gradient-teal);
+}
+
+/* Image placeholder boxes */
+.md-typeset .image-placeholder {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin: 1rem 0;
+  background: linear-gradient(135deg, var(--gradient-purple) 0%, var(--gradient-blue) 50%, var(--gradient-teal) 100%);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Code block styling */
+.md-typeset code {
+  border-radius: 4px;
+}
+
+[data-md-color-scheme="default"] .md-typeset code {
+  background-color: #f5f5f5;
+  color: var(--gradient-purple);
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: #1a1a1a;
+  color: var(--gradient-teal);
+}
+
+/* Links styling */
+.md-typeset a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s;
+}
+
+.md-typeset a:hover {
+  border-bottom-color: var(--md-accent-fg-color);
+}
+
+/* Navigation styling */
+.md-nav__link--active {
+  color: var(--md-accent-fg-color);
+  font-weight: bold;
+}
+
+/* Button styling */
+.md-typeset .button {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--gradient-purple) 0%, var(--gradient-blue) 100%);
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.md-typeset .button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 76.1875em) {
+  .md-typeset .hero {
+    padding: 1.5rem;
+  }
+  
+  .md-typeset .image-placeholder {
+    height: 200px;
+    font-size: 1rem;
+  }
+}
+
+/* GIF figure styling */
+.md-typeset img.gif-figure {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: block;
+  margin: 1.5rem auto 0.5rem auto;
+}
+
+.md-typeset .gif-caption {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+}
