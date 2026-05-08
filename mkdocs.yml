@@ -1,10 +1,10 @@
 site_name: Building Trustworthy AI
 site_description: Code is Life - Building a Trustworthy Generative AI Solution at ØREDEV 2025
 site_author: ØREDEV 2025
-site_url: https://codess-aus.github.io/OREDEV-Building-Trustworthy-AI/
+site_url: https://codess-aus.github.io/DDDBrisbane-BuidingTrustworthyAgents/
 
-repo_name: codess-aus/OREDEV-Building-Trustworthy-AI
-repo_url: https://github.com/codess-aus/OREDEV-Building-Trustworthy-AI
+repo_name: codess-aus/DDDBrisbane-BuidingTrustworthyAgents
+repo_url: https://github.com/codess-aus/DDDBrisbane-BuidingTrustworthyAgents
 
 theme:
   name: material
